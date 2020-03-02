@@ -3,5 +3,8 @@ require 'nokogiri'
 def create_project_hash
   
   projects = {}
-  ht
+  html = File.read('fixtures/kickstarter.html')
+  kickstarter = Nokogiri::HTML(html)
+  
+  
 end
